@@ -11,16 +11,30 @@
 		
   </head>
   <body>
+		<ul id="menu" class="nav navbar-collapse collapse">
+			<li><a href="#about">О семинаре</a></li>
+			<li><a href="#programm">Программа</a></li>
+			<li><a href="#lector">Об авторе</a></li>
+			<li><a href="#connect">Цены</a></li>
+		</ul>
     <header class="container-fluid hero">
 			<div class="container">
 				
 					<div class="col-md-6 col-xs-12">
-						<ul class="main-nav list-inline no-shadow">
+						<ul class="main-nav list-inline">
 							<li><a href="#about">О семинаре</a></li>
 							<li><a href="#programm">Программа</a></li>
 							<li><a href="#lector">Об авторе</a></li>
 							<li><a href="#connect">Цены</a></li>
 						</ul>
+						<nav role="navigation" data-spy="affix" data-offset-top="197">
+							<div id="menuToggle" data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</nav>						
+						
 						<h2><p class="hero">26-27 октября<br/>москва</p></h2>
 
 						<h2 class="grey">Семинар</h2>
@@ -36,7 +50,9 @@
 					</div>
 			
 			</div>
-
+			<div  id="mouse">
+				
+			</div>
 		</header>
 		<div class="container hero" id="about">
 			
@@ -57,9 +73,9 @@
 				<div class="col-md-6 col-xs-12">
 					<h2 class="underline">Для кого?</h2>
 						<div class="row for-whom">
-							<div class="col-md-3 col-xs-12"><img src="./img/anlt.png"/><p><b>Аналитик</b></p></div>
-							<div class="col-md-6 col-xs-12"><img src="./img/fnst.png"/><p><b>Финансист</b></p></div>
-							<div class="col-md-3 col-xs-12"><img src="./img/mrkt.png"/><p><b>Маркетолог</b></p></div>
+							<div class="col-md-3 col-sm-4 col-xs-12"><img src="./img/anlt.png"/><p><b>Аналитик</b></p></div>
+							<div class="col-md-6 col-sm-4  col-xs-12"><img src="./img/fnst.png"/><p><b>Финансист</b></p></div>
+							<div class="col-md-3 col-sm-4 col-xs-12"><img src="./img/mrkt.png"/><p><b>Маркетолог</b></p></div>
 						</div>
 					<iframe width="100%" height="315" src="https://www.youtube.com/embed/WOpV9_zeB4Q" frameborder="0" allowfullscreen></iframe>	
 				</div>				
@@ -91,13 +107,7 @@
 				</div>
 				<div class="row">
 					<!-- 2 -->
-					<div class="col-md-7 col-xs-12">
-						<h3>ВЛАДЕТЬ ПРОФЕССИОНАЛЬНО НАВЫКАМИ ОБРАБОТКИ ДАННЫХ</h3>
-						<div class="inner-text">
-							Овладеете навыками трансформации таблиц из пользовательских в вид базы данных, объединять и настраивать связи между таблицами из разных источников. Освоите добавление данных из файлов, размещённых в одной папке и обучитесь простому написанию формул Power Query.
-						</div>
-					</div>	
-					<div class="col-md-5 col-xs-0">
+					<div class="col-md-5 col-xs-0 d-float-right">
 						<svg 
 						 xmlns="http://www.w3.org/2000/svg"
 						 xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -106,6 +116,13 @@
 						 d="M-0.000,-0.000 L440.000,-0.000 L440.000,274.999 L-0.000,274.999 L-0.000,-0.000 Z"/>
 						</svg>
 					</div>	
+					<div class="col-md-7 col-xs-12">
+						<h3>ВЛАДЕТЬ ПРОФЕССИОНАЛЬНО НАВЫКАМИ ОБРАБОТКИ ДАННЫХ</h3>
+						<div class="inner-text">
+							Овладеете навыками трансформации таблиц из пользовательских в вид базы данных, объединять и настраивать связи между таблицами из разных источников. Освоите добавление данных из файлов, размещённых в одной папке и обучитесь простому написанию формул Power Query.
+						</div>
+					</div>	
+
 				</div>
 				<div class="row">
 					<!-- 3 -->
@@ -135,6 +152,15 @@
 				</div>
 				<div class="row">
 					<!-- 4 -->
+					<div class="col-md-5 col-xs-0 d-float-right">
+						<svg 
+						 xmlns="http://www.w3.org/2000/svg"
+						 xmlns:xlink="http://www.w3.org/1999/xlink"
+						 width="	%" height="275px">
+						<path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+						 d="M-0.000,-0.000 L440.000,-0.000 L440.000,274.999 L-0.000,274.999 L-0.000,-0.000 Z"/>
+						</svg>
+					</div>		
 					<div class="col-md-7 col-xs-12">
 						<h3>ИСПОЛЬЗОВАТЬ POWER BI - ИНСТРУМЕНТ БИЗНЕС-АНАЛИЗА</h3>
 						<div class="inner-text">
@@ -150,15 +176,7 @@
 							</ul>
 					</div>
 					</div>	
-					<div class="col-md-5 col-xs-0">
-						<svg 
-						 xmlns="http://www.w3.org/2000/svg"
-						 xmlns:xlink="http://www.w3.org/1999/xlink"
-						 width="100%" height="275px">
-						<path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
-						 d="M-0.000,-0.000 L440.000,-0.000 L440.000,274.999 L-0.000,274.999 L-0.000,-0.000 Z"/>
-						</svg>
-					</div>						
+				
 				</div>
 				<div class="button button-centered mt-60">Зарегистрироваться</div>
 			</div>
@@ -242,24 +260,26 @@
 			</div>
 		</div>
 		
-		<div class="container hero" id="lector">
-			<h2 class="underline">ведущий и автор семинара</h2>
-			<div class="g_row">
-				<div class="col-md-4 col-xs-12  float-right profile text-center">
-					<img src="./img/lector.png"/>
-					<h2>СТАНИСЛАВ САЛОСТЕЙ</h2>
-					<p class="grey">Генеральный директор Finalytics.pro</p>
-				</div>
-				
-				<div class="col-md-8 col-xs-12 float-left">
-					<ul>					
-						<li>Официальный партнёр компании Microsoft</li>
-						<li>Победитель всероссийского хакатона по визуализации данных в Power BI</li>
-						<li>Консультант по созданию интерактивной отчётности</li>
-						<li>Тренер по бизнес-анализу, Excel и Power BI</li>
-						<li>Действующий автор статей для деловых журналов</li>
-						<li>Автор ресурсов в социальных сетях ВКонтакте и YouTube</li>
-					</ul>					
+		<div class="container-fluid hero" id="lector">
+			<div class="container" id="lector">
+				<h2 class="underline">ведущий и автор семинара</h2>
+				<div class="g_row">
+					<div class="col-md-4 col-xs-12  float-right profile text-center">
+						<img src="./img/lector.png"/>
+						<h2>СТАНИСЛАВ САЛОСТЕЙ</h2>
+						<p class="grey">Генеральный директор Finalytics.pro</p>
+					</div>
+					
+					<div class="col-md-8 col-xs-12 float-left status">
+						<ul>					
+							<li>Официальный партнёр компании Microsoft</li>
+							<li>Победитель всероссийского хакатона по визуализации данных в Power BI</li>
+							<li>Консультант по созданию интерактивной отчётности</li>
+							<li>Тренер по бизнес-анализу, Excel и Power BI</li>
+							<li>Действующий автор статей для деловых журналов</li>
+							<li>Автор ресурсов в социальных сетях ВКонтакте и YouTube</li>
+						</ul>					
+					</div>
 				</div>
 			</div>
 		</div>
@@ -268,10 +288,10 @@
 			<div class="container text-center">
 				<h2 class="underline text-center">СТАТЬ УЧАСТНИКОМ СЕМИНАРА</h2>
 				<p class="proxima-light">
-					26-27 октября 10:00-17:00<br/> Москва, Варшавское шоссе, 11
+					26-27 октября 10:00-17:00<br/> Москва, Варшавское шоссе,&nbsp;11
 				</p>
 				<div class="g_row container-sm  party-groups">
-					<div class="col-md-6 col-xs-12 text-center">
+					<div class="col-md-6 col-sm-6 col-xs-12 text-center">
 						<div class="party-type">
 							<img src="./img/ul.png">
 							<h3>Юридическое лицо</h3>
@@ -290,7 +310,7 @@
 						</div>				
 					</div>
 					
-					<div class="col-md-6 col-xs-12 text-center">
+					<div class="col-md-6 col-sm-6 col-xs-12 text-center">
 						<div class="party-type">
 							<img src="./img/fl.png">
 							<h3>Физическое лицо</h3>
@@ -309,7 +329,7 @@
 						</div>				
 					</div>
 				</div>
-				<h2 class="mt-60 dark-grey">ждём вас на семинаре !</h2>
+				<h2 class="mt-60 dark-grey">ждём вас на семинаре&nbsp;!</h2>
 				<div class="timer container-xs mt-30">
 					<div class="row">
 						<div class="col-md-3 col-xs-6 text-center item">

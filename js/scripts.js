@@ -1,4 +1,13 @@
 $(document).ready(function () {
+
+	$("#menu li a").on('click', function(e){
+		e.preventDefault();
+		$("#menu").removeClass("in");
+		$('html, body').stop().animate({
+				scrollTop: $($(this).attr("href")).offset().top
+		}, 777);
+	});	
+	
 	$(".main-nav a[href*=#]").on("click", function(e){
 			var anchor = $(this);
 			$('html, body').stop().animate({
