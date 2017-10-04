@@ -411,6 +411,10 @@ ul.main-nav a:hover, ul.main-nav a:active{
 	background:#fcf5ce;
 }
 
+.skills img{
+	width:100%;
+}
+
 .skills h2{
 	margin-bottom: 60px !important;
 }
@@ -613,6 +617,8 @@ footer a, footer a:hover{
 @media(max-width: 1370px){
 	header{
 		background: url(../img/dashboard.png) no-repeat left 300px top -200px, -webkit-linear-gradient( 90deg, rgb(243, 243, 243) 0%, rgb(245, 245, 245) 100%);
+		background-image: url(../img/dashboard.png) no-repeat left 300px top -200px, -moz-linear-gradient( 90deg, rgb(243, 243, 243) 0%, rgb(245, 245, 245) 100%);
+		background-image: url(../img/dashboard.png) no-repeat left 300px top -200px, -ms-linear-gradient( 90deg, rgb(243, 243, 243) 0%, rgb(245, 245, 245) 100%);		
 	}
 }
 
@@ -629,9 +635,9 @@ footer a, footer a:hover{
 }*/
 
 @media (max-width: 992px){
-	.timer .item:after{
-		content:"";
-	}
+	/* .timer .item:after{ */
+		/* content:""; */
+	/* } */
 	.timer .item:nth-child(2n-1):after{
 		content:":";
 	}	
@@ -683,6 +689,9 @@ footer a, footer a:hover{
 	}
 	header{
 		background: -webkit-linear-gradient( 90deg, rgb(243, 243, 243) 0%, rgb(245, 245, 245) 100%);
+		background: url(../img/dashboard.png) no-repeat right -600px top -300px, -webkit-linear-gradient( 90deg, rgb(243, 243, 243) 0%, rgb(245, 245, 245) 100%);
+		background-image: url(../img/dashboard.png) no-repeat right -600px top -300px, -moz-linear-gradient( 90deg, rgb(243, 243, 243) 0%, rgb(245, 245, 245) 100%);
+		background-image: url(../img/dashboard.png) no-repeat right -600px top -300px, -ms-linear-gradient( 90deg, rgb(243, 243, 243) 0%, rgb(245, 245, 245) 100%);			
 	}	
 	.main-nav{
 		display:none;
@@ -707,7 +716,35 @@ footer a, footer a:hover{
 		padding-top: 0px;
 	}
 	#programm .item:after{
-		display:none;
+    width: 60px;
+    font-size: 22px;
+    padding: 12px 0px 8px 0px;
+    line-height: 1.9;
+    margin-top: -40px;
+	}
+	.for-whom>div>img{
+		width:100%;
+	}
+	.for-whom > div {
+		font-size: 4vw;
+	}	
+	.timer .item>div:first-child{
+		text-align:right !important;
+	}
+	.timer .item>div:nth-child(2){
+		text-align:left !important;
+	}	
+	.timer .item>div{
+		background:transparent;
+		font-size: 10vw;
+	}
+	.timer .item>p{
+		font-size:4vw;
+	}	
+	.timer .item:after{
+		margin-top: -4vh;
+    font-size: 8vw;
+		
 	}
 }
 
@@ -715,4 +752,16 @@ footer a, footer a:hover{
 	.container-xs {
 			width: 100%;
 	}
+}
+
+@media (max-width: 350px){
+	header{
+		background: -webkit-linear-gradient( 90deg, rgb(243, 243, 243) 0%, rgb(245, 245, 245) 100%);
+		background: url(../img/dashboard.png) no-repeat right -600px top -330px, -webkit-linear-gradient( 90deg, rgb(243, 243, 243) 0%, rgb(245, 245, 245) 100%);
+		background-image: url(../img/dashboard.png) no-repeat right -600px top -330px, -moz-linear-gradient( 90deg, rgb(243, 243, 243) 0%, rgb(245, 245, 245) 100%);
+		background-image: url(../img/dashboard.png) no-repeat right -600px top -330px, -ms-linear-gradient( 90deg, rgb(243, 243, 243) 0%, rgb(245, 245, 245) 100%);			
+	}
+	#menuToggle span{
+		background: #000;	
+	}	
 }
